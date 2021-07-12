@@ -18,8 +18,7 @@ const Video = ({ video }) => {
         </p>
         <p>{video.description}</p>
         <p>Comments</p>
-        <p>{video.comments.map(comment =>
-          comment.message)}</p>
+        <p>{video.comments.map(comment => comment.message)}</p>
       </CardBody>
     </Card>
   );
