@@ -9,6 +9,7 @@ export const GetWithComments = () => {
   return fetch(`${baseUrl}/GetWithComments`)
     .then((res) => res.json())
 };
+
 export const Search = (searchTerm) => {
   return fetch(`${baseUrl}/search?q=${searchTerm}`)
     .then((res) => res.json())
@@ -24,4 +25,6 @@ export const addVideo = (video) => {
   });
 };
 
-
+export const getVideo = (id) => {
+  return fetch(`${baseUrl}/${id}`).then((res) => res.json());
+};
